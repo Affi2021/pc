@@ -1,0 +1,15 @@
+body{
+  background-color: grey;
+}
+
+/* Just adding a class and then it will used by JS to add in H1 */
+
+.big-title{
+  font-size: 5rem;
+  color: yellow;
+  font-family: cursive;
+
+}
+.margin-50{
+  margin: 50px;
+}
