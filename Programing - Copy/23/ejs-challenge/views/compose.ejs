@@ -1,0 +1,21 @@
+
+<%- include('partials/header') %>
+<>
+<!-- Bootstrap CSS -->
+
+<h1>Compose</h1>
+
+
+
+<form name="post" action="/compose" method="post">
+  <div class="form-group">
+
+  <label for="Title" class="form-label">Title</label>
+  <input type="text" class="form-control" name="postTitle" value="" required>
+
+  <label for="Post" class="form-label">Title</label>
+  <textarea name="postBody" type="text" class="form-control" rows="6" placeholder="" required></textarea>
+
+  </div>
+  <button class="btm btn-primary"type="Submit" name="button">Publish</button>
+</form>

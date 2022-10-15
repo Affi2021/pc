@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<h1>Home</h1>
+     <p><%=startingContent%></p>
+<br>
+     <!-- <p><aboutContent%></p>
+<br>
+     <p>=contactContent%></p>
+<br> -->
+     <!-- <p>- JSON.stringify(posts) </p> -->
+
+  <!-- for (i=0 ; i<postsLength ; i++) {
+ console.log(posts[i].postTit)
+ }   -->
+
+
+<%  posts.forEach(function(post){ %>
+
+<h1> <%= (post.postTit);   %></h1>
+<br>
+<p> <%= (post.postTxt).substring(0,80) + ".....";   %><a href="/posts/<%=(post.postTit)%>" >read more</a> </p> 
+<%  })  %>
+
+
+
+<%- include('partials/footer') %>
